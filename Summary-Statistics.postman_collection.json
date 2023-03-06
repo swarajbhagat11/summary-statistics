@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "64da4527-b275-444b-937e-3e7bcf7ad639",
+		"name": "Summary-Statistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19594498"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"swarajbhagat11@gmail.com\",\n    \"password\": \"Aug@2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Swaraj\",\n    \"last_name\": \"Bhagat\",\n    \"email\": \"swarajbhagat11@gmail.com\",\n    \"password\": \"Aug@2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statistics",
+			"item": [
+				{
+					"name": "Get Overall Statistics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/statistics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Statistics by Contract Employee",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/statistics/contract-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"contract-employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Statistics by Department",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/statistics/department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Statistics by Sub Department",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/statistics/sub-department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"sub-department"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Rakesh Singh\",\n    \"salary\": \"70000\",\n    \"currency\": \"USD\",\n    \"on_contract\": \"true\",\n    \"department\": \"Engineering\",\n    \"sub_department\": \"IOT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMmM3NWY1NmVlM2YxY2QzZGY5NzA3MDcxMTY4NTQ1MzE6MDA0OWFlY2U1YmI1NjE4YTk0ZjUzMDBkYjJiMWIzYjI1MzBkMGY0ZWE5MGJhMzFkMGQ0MmJmNTM4ZDZlYmQzZjQ2ZDdmNTYwYjY5OGRhNDcwMWZiMzhmNzZjNjVkNjEyMDJjMDk0NGE3YzE5YjdhNGZmZmRjMTk4OTVhMjgyM2Y3OTA4NDYyOGQzZjIxZjgwNzIwMTEzOWUwMjJiZTQxMTBkM2NkZjM2NWRjNGZhZmNjZGM3ZDkzZjUyYWZmN2I3IiwiaWF0IjoxNjYxODE4MDMzLCJleHAiOjE2NjE4MjE2MzN9.EYAyvLGvt_oVxXzc-BlCS0roT4jnwr54P9a3B7bpHes",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/employee/a97f6c56-aaae-4254-b9e7-bf31e98687bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"a97f6c56-aaae-4254-b9e7-bf31e98687bd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

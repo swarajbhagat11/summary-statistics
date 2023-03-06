@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "CommonJS",
+    "target": "es6",
+    "rootDir": "./",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@configs/*": ["src/configs/*"],
+      "@constants/*": ["src/constants/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@models": ["src/db/models/index"],
+      "@repositories/*": ["src/repositories/*"],
+      "@routes": ["src/routes/index"],
+      "@services/*": ["src/services/*"],
+      "@types": ["src/types/index"],
+      "@utils/*": ["src/utils/*"],
+      "@validations/*": ["src/validations/*"]
+    }
+  }
+}
